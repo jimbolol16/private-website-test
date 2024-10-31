@@ -1,0 +1,30 @@
+form_is_company: "I am company"
+form_name: "Name"
+form_lastname: "Last name"
+form_id: "ID number"
+form_address: "Address"
+form_city: "City"
+form_state: "Province"
+form_country: "Country"
+form_zip: "Zip code"
+form_phone: "Phone"
+form_cta: "Continue to payment"
+error_first_name:
+  required: "Name required"
+error_last_name:
+  required: "Last name required"
+error_id:
+  required: "ID number required"
+error_address:
+  required: "Address required"
+error_city:
+  required: "City required"
+error_state:
+  required: "Province required"
+error_country:
+  required: "Country required"
+error_zip:
+  required: "Zip code required"
+  validateZipCode: "Wrong zip code"
+error_phone:
+  validatePhoneNumber: "Phone required"

@@ -1,0 +1,27 @@
+form_main_title: "WE WILL GET BACK TO YOU IMMEDIATELY"
+form_subtitle: "Request your quote"
+form_name: "Name"
+form_lastname: "Surname"
+form_phone: "Phone"
+form_email: "E-mail "
+form_coupon: "Promotional code"
+form_comment: "Comment"
+form_checkbox_1_prefix: 'By clicking on "Send request" you agree to our'
+form_checkbox_1_span: "privacy policy"
+form_checkbox_1_suffix: "to process your data for the purpose of processing your inquiry or request"
+form_checkbox_2_prefix: "I agree to receive commercial communications from Box2box in accordance with the provisions in our"
+form_checkbox_2_span: "privacy policy"
+form_cta: "Send request"
+error_first_name:
+  required: "First name required"
+error_last_name:
+  required: "Last name required"
+error_email:
+  required: "Email required"
+  email: "Invalid email address"
+error_phone:
+  validatePhoneNumber: "Invalid phone number"
+error_coupon:
+  invalidCode: "Invalid coupon"
+  codeUsed: "Coupon already redeemed"
+generic_error: "Error while sending the form. Please try again later"

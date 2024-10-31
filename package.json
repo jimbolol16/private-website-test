@@ -1,0 +1,109 @@
+{
+  "name": "box2box",
+  "description": "Box2box public frontend",
+  "version": "2.2.57",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env TAILWIND_MODE=watch nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint": "vue-cli-service lint",
+    "lintfix": "yarn lint:js --fix",
+    "vercel-build": "yarn global add node-gyp-build",
+    "major": "npm --no-git-tag-version version major",
+    "minor": "npm --no-git-tag-version version minor",
+    "patch": "npm --no-git-tag-version version patch",
+    "postversion": "python scripts/generate_changelog.py"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/google-gtag": "^1.0.4",
+    "@nuxtjs/gtm": "^2.4.0",
+    "@nuxtjs/i18n": "^7.3.0",
+    "@nuxtjs/redirect-module": "^0.3.1",
+    "@nuxtjs/robots": "^2.5.0",
+    "@nuxtjs/sitemap": "^2.4.0",
+    "cheerio": "^1.0.0-rc.12",
+    "core-js": "^3.19.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.0.1",
+    "helmet": "^6.0.0",
+    "host-validation": "^2.0.1",
+    "libphonenumber-js": "^1.10.13",
+    "mongodb": "^4.9.0",
+    "node-fetch-native": "^1.4.0",
+    "nuxt": "^2.17.1",
+    "swiper": "6.8.1",
+    "type-detect": "^4.0.8",
+    "uuid": "^9.0.0",
+    "v-calendar": "^2.4.1",
+    "vue": "^2.6.14",
+    "vue-click-outside": "^1.1.0",
+    "vue-intersect-directive": "^1.1.1",
+    "vue-lazy-hydration": "^2.0.0-beta.4",
+    "vue-server-renderer": "^2.6.14",
+    "vue-template-compiler": "^2.6.14",
+    "vuelidate": "^0.7.7"
+  },
+  "devDependencies": {
+    "@adyen/adyen-web": "^5.29.0",
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.16.3",
+    "@dword-design/functions": "^4.1.0",
+    "@nuxt/image": "^0.7.1",
+    "@nuxtjs/critters": "^0.3.3",
+    "@nuxtjs/eslint-config": "^8.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/google-fonts": "^3.0.0-0",
+    "@nuxtjs/pwa": "^3.3.5",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "ast-to-literal": "^0.0.5",
+    "autoprefixer": "^10.4.8",
+    "chargebee": "^2.17.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.4.1",
+    "eslint-plugin-nuxt": "^3.1.0",
+    "eslint-plugin-vue": "^8.2.0",
+    "node-sass": "^7.0.1",
+    "postcss": "^8.4.16",
+    "sass": "^1.54.4",
+    "sass-loader": "10.3.1",
+    "tailwindcss": "^3.1.8",
+    "webpack": "^4.46.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {},
+    "rules": {
+      "max-len": "off",
+      "no-param-reassign": "off",
+      "consistent-return": "off",
+      "prefer-default-export": "off",
+      "no-underscore-dangle": "off",
+      "vue/valid-template-root": "off",
+      "vue/multi-word-component-names": [
+        "error",
+        {
+          "ignores": [
+            "index",
+            "calculator",
+            "about",
+            "default"
+          ]
+        }
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=18.0.0 <20.0.0"
+  }
+}

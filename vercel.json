@@ -1,0 +1,135 @@
+{
+  "version": 2,
+  "framework": "nuxtjs",
+  "buildCommand": "yarn build",
+  "routes": [
+    {
+      "src": "/sitemap.xml",
+      "headers": {
+        "Cache-control": "max-age=0, s-maxage=86400, stale-while-revalidate"
+      }
+    },
+    {
+      "src": "/api/faqs",
+      "dest": "/api/index.js",
+      "headers": {
+        "Cache-control": "s-maxage=120, stale-while-revalidate"
+      }
+    },
+    {
+      "src": "/api/home-faqs",
+      "dest": "/api/index.js",
+      "headers": {
+        "Cache-control": "s-maxage=120, stale-while-revalidate"
+      }
+    },
+    {
+      "src": "/api/reviews",
+      "dest": "/api/index.js",
+      "headers": {
+        "Cache-control": "s-maxage=120, stale-while-revalidate"
+      }
+    },
+    {
+      "src": "/api/items",
+      "dest": "/api/index.js",
+      "headers": {
+        "Cache-control": "s-maxage=120, stale-while-revalidate"
+      }
+    },
+    {
+      "src": "/api/prices",
+      "dest": "/api/index.js",
+      "headers": {
+        "Cache-control": "s-maxage=120, stale-while-revalidate"
+      }
+    },
+    {
+      "src": "/api/cities",
+      "dest": "/api/index.js",
+      "headers": {
+        "Cache-control": "s-maxage=120, stale-while-revalidate"
+      }
+    },
+    {
+      "src": "/api/footer-cities",
+      "dest": "/api/index.js",
+      "headers": {
+        "Cache-control": "s-maxage=120, stale-while-revalidate"
+      }
+    },
+    {
+      "src": "/api/submit",
+      "dest": "/api/index.js"
+    },
+    {
+      "src": "/api/validate-coupon",
+      "dest": "/api/index.js"
+    },
+    {
+      "src": "/api/validate-email",
+      "dest": "/api/index.js"
+    },
+    {
+      "src": "/blog",
+      "dest": "https://blogbox.box2boxstorage.com/blog"
+    },
+    {
+      "src": "/blog/_nuxt/(.*)",
+      "dest": "https://blogbox.box2boxstorage.com/_nuxt/$1"
+    },
+    {
+      "src": "/blog/robots.txt",
+      "dest": "https://blogbox.box2boxstorage.com/robots.txt"
+    },
+    {
+      "src": "/blog/sitemap.xml",
+      "dest": "https://blogbox.box2boxstorage.com/sitemap.xml"
+    },
+    {
+      "src": "/blog/(.*)",
+      "dest": "https://blogbox.box2boxstorage.com/blog/$1"
+    },
+    {
+      "src": "/sw.js",
+      "continue": true,
+      "headers": {
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "Service-Worker-Allowed": "/"
+      }
+    }
+  ],
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": ".nuxt/dist/sitemap-routes.json",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "nuxt.config.js",
+      "use": "@nuxtjs/vercel-builder@0.25.0",
+      "config": {
+        "serverFiles": [
+          "package.json",
+          "server/**",
+          "api/**",
+          "utils/sitemapRoutes.js",
+          "utils/excludeRobots.js",
+          "i18n/index.js",
+          "i18n/*.json",
+          "utils/decorators.js",
+          "utils/empty.js",
+          "utils/promotions.js",
+          ".nuxt/dist/sitemap-routes.json"
+        ]
+      }
+    }
+  ]
+}

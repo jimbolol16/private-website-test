@@ -1,0 +1,16 @@
+foo_title_prefix: "Let us know your"
+foo_title_highlight: "number"
+foo_title_suffix: "and we will call you as soon as possible"
+foo_input_legal_prefix: 'By clicking on "Send" you agree to our'
+foo_input_legal_span: "privacy policy"
+foo_input_legal_suffix: "to process your data for the purpose of processing your inquiry or request"
+foo_body_prefix: "Or if you prefer it, call us at"
+foo_body_span: "919 033 033"
+foo_body_phone: "+34919033033"
+foo_body_prefix_email: "or write to us at"
+foo_body_email: "hola@box2boxstorage.com"
+foo_body_suffix: "and we will solve all your doubts"
+form_phone: "Phone"
+error_phone:
+  validatePhoneNumber: "Invalid phone number"
+generic_error: "Error while sending the form. Please try again later"

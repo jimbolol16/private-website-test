@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-roboto font-medium text-dark;
+  }
+
+  h1 {
+    @apply font-manrope font-extrabold text-dark text-[34px] leading-[38px] mobileL:text-[54px] mobileL:leading-[65px] tablet:text-[54px] tablet:leading-[65px] desktop:text-[66px] desktop:leading-[73px] desktopL:text-[66px] desktopL:leading-[73px];
+  }
+  h2 {
+    @apply font-manrope font-extrabold text-dark text-[34px] leading-[38px] tablet:text-[54px] tablet:leading-[64px] mobileL:text-[55px] mobileL:leading-[70px] desktop:text-[54px] desktop:leading-[64px] desktopL:text-[54px] desktopL:leading-[64px];
+  }
+  h2.alternative {
+    @apply font-manrope font-normal text-white text-[34px] leading-[38px] mobileL:text-[53px] mobileL:leading-[70px] mobileL:-tracking-[0.02em] tablet:text-[53px] tablet:leading-[70px] tablet:-tracking-[0.02em] desktop:text-[53px] desktop:leading-[70px] desktop:-tracking-[0.02em];
+  }
+  h3 {
+    @apply font-manrope -tracking-[0.03em] font-extrabold text-dark text-[30px] leading-[30px] mobileL:text-[35px] mobileL:leading-[35px] tablet:text-[35px] tablet:leading-[30px] desktop:text-[35px] desktop:leading-[30px];
+  }
+  h4 {
+    @apply font-manrope font-extrabold text-electric text-[16px] leading-[25px] tablet:text-[18px] tablet:leading-[25px] desktop:text-[18px] desktop:leading-[22px] desktopL:text-[18px] desktopL:leading-[22px];
+  }
+  h5 {
+    @apply font-manrope font-extrabold text-[20px] leading-[29px] mobileL:text-[21px] mobileL:leading-[25px]  tablet:text-[20px] tablet:leading-[29px] desktop:text-[20px] desktop:leading-[29px];
+  }
+
+  p.p1 {
+    @apply font-roboto font-light text-[22px] leading-[30px] -tracking-[0.04em] tablet:text-[22px] tablet:leading-[30px] desktop:text-[22px] desktop:leading-[30px];
+  }
+  p.p2 {
+    @apply font-roboto font-normal text-dark/60 text-[18px] leading-[27px] mobileL:text-[18px] mobileL:leading-[25px] tablet:text-[18px] tablet:leading-[27px] desktop:text-[18px] desktop:leading-[27px] desktopL:text-[18px] desktopL:leading-[27px];
+  }
+
+  p.sub-heading {
+    @apply font-poppins font-normal text-[10px] leading-[110%] tablet:text-[10px] tablet:leading-[110%] desktop:text-[18px] desktop:leading-[110%];
+  }
+
+  p.sub-heading-button {
+    @apply font-poppins font-normal text-[10px] leading-[110%];
+  }
+
+  h2.wizard-title {
+    @apply font-manrope font-extrabold text-[30px] leading-[40px] -tracking-[0.03em];
+  }
+  .wizard-subtitles {
+    @apply font-manrope font-semibold text-[20px] leading-[40px] -tracking-[0.03em];
+  }
+
+  .grid-layout {
+    @apply justify-center grid desktopL:grid-cols-desktopL desktopL:gap-x-6 desktopL:mx-auto desktop:grid-cols-desktop desktop:gap-x-6 desktop:mx-auto tablet:grid-cols-tablet tablet:gap-x-6 tablet:px-6 mobileL:grid-cols-mobileL mobileL:gap-x-4 mobileL:px-8 mobile:grid-cols-mobile mobile:gap-x-4 mobile:px-4;
+  }
+
+  .subgrid-layout {
+    @apply grid desktopL:grid-cols-desktopL desktopL:gap-x-6 desktop:grid-cols-desktop desktop:gap-x-6 tablet:grid-cols-tablet tablet:gap-x-6 mobileL:grid-cols-mobileL mobileL:gap-x-4 mobile:grid-cols-mobile mobile:gap-x-4 justify-center;
+  }
+
+  .placeholder-text {
+    @apply placeholder:text-electric-input;
+  }
+
+  .section-vertical-padding {
+    @apply mobileL:pb-mobileL mobile:pb-mobile tablet:pb-tablet desktop:pb-desktop desktopL:pb-desktopL;
+  }
+
+  .locations {
+    @apply font-manrope font-normal text-[16px] leading-[24px] text-center text-electric;
+  }
+
+  .header-white {
+    @apply text-white fill-white stroke-white;
+  }
+}
+
+@layer utilities {
+  .scrollbar {
+    padding-right: 4px;
+  }
+
+  .scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background: #fff;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #e7edfa;
+    height: 61px;
+    background-clip: padding-box;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "cities": {
+    "madrid": "Madrid",
+    "barcelona": "Barcelona",
+    "malaga": "Malaga",
+    "sevilla": "Seville",
+    "valencia": "Valencia",
+    "lisboa": "Lisbon",
+    "oporto": "Porto",
+    "paris": "Paris",
+    "milano": "Milan",
+    "queretaro": "Queretaro"
+  }
+}

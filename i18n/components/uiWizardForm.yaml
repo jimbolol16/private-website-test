@@ -1,0 +1,34 @@
+step_3_title_1: "Enter your"
+step_3_highlight: "data"
+step_3_title_2: "and receive all the information without obligation"
+step_3_city: "City"
+step_3_choosen_plan: "Chosen space"
+form_name: "First name"
+form_lastname: "Last name"
+form_phone: "Phone"
+form_address: "Pick-up address"
+form_email: "E-mail "
+form_comment: "Comment"
+form_checkbox_1_prefix: 'By clicking on "{data}" you accept our'
+form_checkbox_1_span: "privacy policy"
+form_checkbox_1_suffix: "to process your data in order to process your query or request."
+form_checkbox_2_prefix: "I agree to receive commercial communications from Box2box in accordance with the provisions of our"
+form_checkbox_2_span: "privacy policy"
+form_cta: "Request a quote"
+monthly: "Month"
+biannual: "Biannual"
+annual: "Annual"
+space_undefined: "Personalized"
+locker: "Locker"
+error_first_name:
+  required: "First name required"
+error_last_name:
+  required: "Last name required"
+error_email:
+  required: "Email required"
+  email: "Invalid email address"
+error_phone:
+  validatePhoneNumber: "Invalid phone number"
+error_city:
+  required: "City required"
+generic_error: "Error while sending the form. Please try again later"

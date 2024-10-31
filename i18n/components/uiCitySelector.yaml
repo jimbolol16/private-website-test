@@ -1,0 +1,4 @@
+hea_placeholder: "Select city"
+select_button_text: "Or press ENTER"
+error_city:
+  required: "City required"

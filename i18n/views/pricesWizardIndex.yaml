@@ -1,0 +1,4 @@
+mod_title: "Are you sure?"
+mod_message: "If you leave this page you will lose the progress you have made so far."
+mod_cta_main: "Continue"
+mod_cta_secondary: "Exit"

@@ -1,0 +1,17 @@
+node_modules
+functions
+.env
+.pre-commit-config.yaml
+.firebaserc
+.gitignore
+.eslintignore
+.vercel
+.vercel.bak
+.vercelignore
+.yarnclean
+.git
+.nuxt
+*.log
+README.md
+CHANGELOG.md
+.eslintcache
