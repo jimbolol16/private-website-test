@@ -20,32 +20,32 @@ export default {
     return {
       slides: [
         {
-          image: '/aboutus/Depósito BOX2BOX.jpg',
+          image: '/aboutus/3.jpg',
           title: 'attrezzatura',
           description: 'Garantiamo la sicurezza e l\'integrità di materiale fragile o tecnico durante il trasporto e durante la permanenza nel nostro deposito.',
         },
         {
-          image: '/aboutus/Transporte BOX2BOX.jpg',
+          image: '/aboutus/2.jpg',
           title: 'Conservazioni Archivi',
           description: 'Custodiamo vari tipi di documentazioni cartacee, classificando ogni articolo per facilitarne la riconsegna e la consultazione.',
         },
         {
-          image: '/aboutus/Montaje y desmontaje BOX2BOX.jpg',
+          image: '/aboutus/6.jpg',
           title: 'Stoccaggio Prodotti Finiti',
           description: 'Offriamo soluzioni di stoccaggio per prodotti finiti, garantendo l\'ottimizzazione dello spazio e l\'efficienza logistica.',
         },
         {
-          image: '/aboutus/Trasloco BOX2BOX.jpg',
+          image: '/aboutus/4.jpg',
           title: 'Stoccaggio Prodotti Finiti',
           description: 'Offriamo soluzioni di stoccaggio per prodotti finiti, garantendo l\'ottimizzazione dello spazio e l\'efficienza logistica.',
         },
         {
-          image: '/aboutus/10.jpg',
+          image: '/aboutus/1.jpg',
           title: 'Stoccaggio Prodotti Finiti',
           description: 'Offriamo soluzioni di stoccaggio per prodotti finiti, garantendo l\'ottimizzazione dello spazio e l\'efficienza logistica.',
         },
         {
-          image: '/aboutus/Reconocer parciales - BOX2BOX.jpg',
+          image: '/aboutus/7.jpg',
           title: 'Stoccaggio Prodotti Finiti',
           description: 'Offriamo soluzioni di stoccaggio per prodotti finiti, garantendo l\'ottimizzazione dello spazio e l\'efficienza logistica.',
         },

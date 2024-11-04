@@ -8,7 +8,7 @@
       <ui-card-section-three
         :title="$t('sec3_card_1_title')"
         :body="$t('sec3_card_1_body')"
-        :imageSrc="'/aboutus/madrid.png'" 
+        :imageSrc="'/aboutus/9.jpg'" 
         :imageAlt="'Imagen de Madrid'"
         class="hoverable-card"
       >
@@ -25,7 +25,7 @@
       <ui-card-section-three
         :title="$t('sec3_card_2_title')"
         :body="$t('sec3_card_2_body')"
-        :imageSrc="'/aboutus/lisboa.png'"
+        :imageSrc="'/aboutus/13.jpg'"
         :imageAlt="'Entregas flexibles'"
         class="hoverable-card" 
       >
@@ -42,7 +42,7 @@
       <ui-card-section-three
         :title="$t('sec3_card_3_title')"
         :body="$t('sec3_card_3_body')"
-        :imageSrc="'/aboutus/malaga.png'"
+        :imageSrc="'/aboutus/5.jpg'"
         :imageAlt="'Seguimiento de stocks'"
         class="hoverable-card"
       >
