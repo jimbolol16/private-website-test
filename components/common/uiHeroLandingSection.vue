@@ -21,7 +21,7 @@
 
       <!-- Background image -->
       <div
-        class="absolute z-[1] left-0 desktopL:bottom-0 desktop:bottom-0 desktopL:translate-y-28 desktop:translate-y-28 tablet:hidden mobileL:hidden mobile:hidden"
+        class="absolute z-[1] left-0 desktopL:bottom-[-40px] desktop:bottom-[-40px] desktopL:translate-y-40 desktop:translate-y-40 tablet:hidden mobileL:hidden mobile:hidden"
       >
         <div class="relative">
           <div class="overflow-hidden">
@@ -37,7 +37,7 @@
 
       <div class="grid-layout w-full h-full min-h-[inherit]">
         <div
-          class="col-start-1 col-span-6 row-start-1 mt-40 mobileL:col-start-1 mobileL:col-span-full mobile:col-start-1 mobile:col-span-full"
+          class="col-start-1 col-span-6 row-start-1 mt-20 mobileL:col-start-1 mobileL:col-span-full mobile:col-start-1 mobile:col-span-full"
         >
           <h1 class="text-left text-white">
             {{ hero_prefix }}
@@ -50,15 +50,16 @@
           <p class="text-left text-white text-base mt-4">
             {{ hero_subtitle }}
           </p>
-          <!-- Incrustar la imagen debajo del texto -->
+          <!-- Image under the text -->
           <nuxt-img
             :provider="$config.img_provider"
-            src="/aboutus/imagen1.png"
+            src="/aboutus/hero-image.webp"
             alt="imagen debajo del texto"
-            class="w-full mt-4"
+            class="w-full"
           />
         </div>
-        <!-- Formulario -->
+
+        <!-- Form -->
         <div
           class="col-start-7 col-span-6 row-start-1 mt-40 mobileL:col-span-full mobile:col-start-1 mobile:col-span-full scale-90"
         >
@@ -79,6 +80,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import FormComponent from "@/components/sections/FormComponent.vue";
 
@@ -87,7 +89,7 @@ export default {
   components: {
     "ui-button-and-video": async () =>
       await import("@/components/common/uiButtonAndVideo.vue"),
-    FormComponent, // Importamos el FormComponent aquí
+    FormComponent,
   },
   props: {
     backgroundImage: {
